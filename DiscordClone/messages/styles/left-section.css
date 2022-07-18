@@ -1,0 +1,238 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(40, 40, 40);
+    display: flex;
+    height: 100%;
+}
+
+.left-section, .middle-section, .right-section {
+    height: 100%;
+}
+
+.left-section {
+    display: flex;
+}
+
+.left1, .left2{
+    display: flex;
+    flex-direction: column;
+}
+
+.left1 {
+    background: #202225;
+    padding: 13px;
+    padding-top: 4px;
+    align-items: center;
+}
+
+.left1 div {
+    margin-top: 7px;
+
+}
+
+.pf1, .pf2, .pf3, .pf4 {
+    background: #36393f;
+    border-radius: 30px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.pf1:hover, .pf3:hover img, .pf4:hover{
+    border-radius: 15px;
+}
+
+.pf1:hover {
+    background: #5865f2
+}
+
+.left-line {
+    position: absolute;
+    width: 4px;
+    height: 0px;
+    background: white;
+    left: -10px;
+    top: 3px;
+    z-index: 2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity, height 0.5s;
+}
+
+.pf1:hover .left-line, .pf3:hover .left-line {
+    opacity: 1;
+    height: 30px;
+}
+
+.tooltip {
+    position: absolute;
+    right: -80px;
+    color: rgb(218, 218, 218);
+    padding: 8px;
+    background: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    top: -1px;
+    transition: opacity 0.15s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.pf1:hover .tooltip, .pf2:hover .tooltip, .pf3:hover .tooltip, .pf4:hover .tooltip {
+    opacity: 1;
+}
+
+.line {
+    height: 2px;
+    width: 31px;
+    background: #36393f;
+    margin-right: 1px
+}
+
+.pf3 img {
+    width: 100%;
+    border-radius: 30px;;
+}
+
+.pf4:hover {
+    background: rgba(0, 207, 69, 0.5)
+}
+
+.pf4:hover svg path{
+    color: white;
+}
+
+/* LEFT 2 STYLES */
+
+.left2 {
+    background: #2F3136;
+    position: relative
+}
+
+.lupper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 210px;
+    color: white;
+    padding: 13px;
+    box-shadow: 0px 1px 2px rgb(24, 24, 24);
+    cursor: pointer;
+}
+
+.lupper:hover {
+    background: #3b3e44
+}
+
+.channels, .channel {
+    display: flex;
+    flex-direction: column;
+}
+
+.channels {
+    padding: 10px;
+}
+
+.channel {
+    margin-top: 7px;
+}
+
+.name, .contents, .contents div, .contents2, .contents2 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #96989D;    
+}
+.name .p1 {
+    font-size: 12px;
+}
+
+.name .p2 {
+    font-size: 25px;
+    margin-right: 7px;
+}
+
+.contents, .contents2 {
+    margin-top: 3px;
+    background: #42464D;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contents2 {
+    background: transparent;
+}
+
+.holder {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip2{
+    position: absolute;
+    top: -30px;
+    left: -260%;
+    white-space: nowrap;
+    color: rgb(218, 218, 218) !important;
+    padding: 8px;
+    background: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opactiy 0.15s;
+}
+
+.show-img {
+    opacity: 0;
+}
+
+.holder:hover .tooltip2{
+    opacity: 1;
+}
+
+.channel-p {
+    font-size: 14px; 
+    margin-left: 5px;
+}
+
+.contents2:hover {
+    background-color: #42464D;
+}
+
+.contents2:hover .channel-p{
+    color: rgb(220, 220, 220);
+}
+
+.contents2:hover .show-img{
+    opacity: 1;
+}
+
+.ffooter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #292B2F;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profooter, .iconsfooter {
+    display: flex;
+    align-items: center;
+}

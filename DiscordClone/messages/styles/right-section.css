@@ -1,0 +1,117 @@
+.right-section {
+    background: #36393F;
+    flex: 1;
+}
+
+.rupper {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    box-shadow: 0px 1px 2px rgb(24, 24, 24);
+}
+
+.rupper div {
+    display: flex;
+    align-items: center;
+}
+
+.rinput {
+    width: 140px;
+    border-radius: 5px;
+    background: #202225;
+    border: none;
+    padding: 5px;
+    outline: transparent solid 5px;;
+    caret-color: rgb(187, 185, 190);
+    color: rgb(220, 220, 220);
+    transition: width 0.15s;
+    margin-right: 10px;
+}
+
+.rinput::placeholder {
+    color: #9A9DA1
+}
+
+.rinput:focus{
+    width: 220px;
+}
+
+.ricons .holder .tooltip2 {
+    top: 110%;
+    left: -20px
+}
+
+.messages {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 25px;
+    position: relative;
+}
+
+.messages-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.pfp {
+    width: 45px;
+    border-radius: 25px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgb(87, 87, 87);
+}
+
+.date {
+    position: absolute;
+    top: -8px;
+    background: #36393F;
+    color: #A3A692;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: cursive;
+    left: 45%;
+    padding: 0px 3px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.message img {
+    border-radius: 23px;
+}
+
+.dinput {
+    position: absolute;
+    bottom: 25px;
+    left: 342px;
+    right: 100px;
+}
+
+.minput input {
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: transparent 5px solid;
+    cursor: default;
+    background: #40444B;
+    caret-color: rgb(187, 185, 190);
+    color: rgb(220, 220, 220);
+}
+
+.plus-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
